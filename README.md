@@ -1,7 +1,5 @@
 # docker-cheatsheet 🐳
 
-A collection of basic Docker commands for beginners.
-
 ## 1. Images 📦
 *An Image is the blueprint or package of the software.*
 
@@ -71,7 +69,10 @@ A collection of basic Docker commands for beginners.
    The Ubuntu image is configured to start a shell by default.
 
   ```bash
-  docker run -it ubuntu or docker run --name my-ubuntu -it ubuntu
+  ```bash
+   docker run -it ubuntu
+   # OR
+   docker run --name my-ubuntu -it ubuntu
   # This automatically opens /bin/bash, so you don't need to type it.
   ```
 
