@@ -24,14 +24,14 @@ A collection of basic Docker commands for beginners.
   docker rmi <image_name>
   # Example: docker rmi ubuntu
   ```
-
-  ## 2. Containers 🚀
+  
+## 2. Containers 🚀
   A Container is a running instance of an Image.
-
+  
   - **Run a Container (Basic):**
     This starts the container, executes a command (if any), and then exits immediately.
     ```bash
     docker run <image_name>
     # Example: docker run ubuntu
-    ```
+     ```
     
