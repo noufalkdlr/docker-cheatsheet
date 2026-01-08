@@ -43,5 +43,6 @@ A collection of basic Docker commands for beginners.
     ```bash
     docker run -it <image_name>
     # Example:  docker run -it ubuntu
-     ```    
+     ```
+    (To leave the container, type exit).    
     
