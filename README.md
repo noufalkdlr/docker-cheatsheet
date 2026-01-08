@@ -39,8 +39,9 @@ A collection of basic Docker commands for beginners.
     Most Useful Start a container and enter its terminal shell.
     -  `-i`: Interactive (keeps STDIN open)
     -  `-t`: Pseudo-TTY (allocates a terminal)
+        
     ```bash
-    docker run <image_name>
-    # Example: docker run ubuntu
+    docker run -it <image_name>
+    # Example:  docker run -it ubuntu
      ```    
     
