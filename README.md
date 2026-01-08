@@ -80,6 +80,8 @@
 
   ```bash
   docker run -it python /bin/bash
+  # OR
+  docker run --name my-python -it python /bin/bash
   # Without /bin/bash, you would get the Python >>> console.
   # With /bin/bash, you get the terminal to run pip install, ls, etc.
   ```
