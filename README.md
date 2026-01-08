@@ -71,8 +71,18 @@ A collection of basic Docker commands for beginners.
    The Ubuntu image is configured to start a shell by default.
 
   ```bash
-  docker run -it ubuntu
+  docker run -it ubuntu or docker run --name my-ubuntu -it ubuntu
   # This automatically opens /bin/bash, so you don't need to type it.
   ```
+
+- **When `/bin/bash` is Required (e.g., Python/Node):**
+  Some images start their own program (like python console) by default. To get a system terminal instead, you must specify it.
+
+  ```bash
+  docker run -it python /bin/bash
+  # Without /bin/bash, you would get the Python >>> console.
+  # With /bin/bash, you get the terminal to run pip install, ls, etc.
+  ```
+  
 
     
