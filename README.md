@@ -67,13 +67,13 @@
 
  - **When `/bin/bash` is Optional (e.g., Ubuntu):**
    The Ubuntu image is configured to start a shell by default.
-
-  ```bash
-   docker run -it ubuntu
-   # OR
-   docker run --name my-ubuntu -it ubuntu
-  # This automatically opens /bin/bash, so you don't need to type it.
-  ```
+  
+   ```bash
+     docker run -it ubuntu
+     # OR
+     docker run --name my-ubuntu -it ubuntu
+     # This automatically opens /bin/bash, so you don't need to type it.
+   ```
 
 - **When `/bin/bash` is Required (e.g., Python/Node):**
   Some images start their own program (like python console) by default. To get a system terminal instead, you must specify it.
