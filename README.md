@@ -85,6 +85,31 @@
   # Without /bin/bash, you would get the Python >>> console.
   # With /bin/bash, you get the terminal to run pip install, ls, etc.
   ```
-  
+
+  ## 5. Manage Containers 🛠️
+
+  - **List Running Containers:**
+    Show only the containers that are currently active.
+    ```bash
+    docker ps
+    ```
+
+    - **List All Containers:**
+      Show all containers, including those that have stopped or exited.
+    ```bash
+    docker ps -a
+    ```
+
+    - **Stop a Container:**
+      Gracefully stop a running container.
+    ```bash
+    docker stop <container_id>
+    ```
+    
+    - **Remove a Container:** Delete a stopped container permanently.
+      Gracefully stop a running container.
+    ```bash
+    docker rm <container_id>
+    ```
 
     
