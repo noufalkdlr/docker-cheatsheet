@@ -18,7 +18,7 @@ A collection of basic Docker commands for beginners.
   docker images
   ```
 
-  -**Delete an Image:**
+  - **Delete an Image:**
   Remove an image from your local storage to save space.
   ```bash
   docker rmi <image_name>
@@ -44,5 +44,23 @@ A collection of basic Docker commands for beginners.
     docker run -it <image_name>
     # Example:  docker run -it ubuntu
      ```
-    (To leave the container, type exit).    
+    (To leave the container, type exit).
+
+## 3. Naming & Resuming Containers 🏷️
+*Give your container a name to easily find and reuse it later.*
+
+- **Run with a Custom Name:**
+  Instead of getting a random name (like `jolly_beaver`), assign one yourself.
+  ```bash
+  docker run --name <custom_name> -it <image_name>
+  # Example: docker run --name my-ubuntu -it ubuntu
+  ```
+
+- **Resume a Stopped Container:**
+  If you exited a named container, use this to go back to the same state (saved files, etc.).
+
+    ```bash
+  docker start -ai <container_name>
+  # Example: docker start -ai my-ubuntu
+  ```
     
