@@ -8,7 +8,8 @@ A collection of basic Docker commands for beginners.
 - **Download an Image:**
   Pull the latest Ubuntu image from Docker Hub.
   ```bash
-  docker pull ubuntu
+  docker pull <image_name>
+  # Example: docker pull ubuntu
   ```
 
 - **List Images:**
@@ -23,3 +24,14 @@ A collection of basic Docker commands for beginners.
   docker rmi <image_name>
   # Example: docker rmi ubuntu
   ```
+
+  ## 2. Containers 🚀
+  A Container is a running instance of an Image.
+
+  - **Run a Container (Basic):**
+    This starts the container, executes a command (if any), and then exits immediately.
+    ```bash
+    docker run <image_name>
+    # Example: docker run ubuntu
+    ```
+    
