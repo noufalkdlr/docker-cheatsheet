@@ -26,7 +26,7 @@ A collection of basic Docker commands for beginners.
   ```
   
 ## 2. Containers 🚀
-  A Container is a running instance of an Image.
+  *A Container is a running instance of an Image.*
   
   - **Run a Container (Basic):**
     This starts the container, executes a command (if any), and then exits immediately.
@@ -59,8 +59,20 @@ A collection of basic Docker commands for beginners.
 - **Resume a Stopped Container:**
   If you exited a named container, use this to go back to the same state (saved files, etc.).
 
-    ```bash
+  ```bash
   docker start -ai <container_name>
   # Example: docker start -ai my-ubuntu
   ```
+
+ ## Overriding Default Commands (`/bin/bash`) 🐚 🏷️
+ *Control what program starts when the container runs.*
+
+ - **When `/bin/bash` is Optional (e.g., Ubuntu):**
+   The Ubuntu image is configured to start a shell by default.
+
+  ```bash
+  docker run -it ubuntu
+  # This automatically opens /bin/bash, so you don't need to type it.
+  ```
+
     
