@@ -107,8 +107,8 @@
   # Example: docker stop my-ubuntu
   ```
   
-  - **Remove a Container:** Delete a stopped container permanently.
-    Gracefully stop a running container.
+  - **Remove a Container:**
+    Delete a stopped container permanently.
   ```bash
   docker rm <container_id_or_name>
   # Example: docker rm my-ubuntu
@@ -126,7 +126,7 @@
 
 - **Total System Cleanup (Dangerous but Effective):**
   This removes all stopped containers, unused networks, and "dangling" images (broken downloads).
-  ```basg
+  ```bash
   docker system prune
   ```
 
