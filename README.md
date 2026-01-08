@@ -62,13 +62,12 @@
   # Example: docker start -ai my-ubuntu
   ```
 
- ## Overriding Default Commands (`/bin/bash`) 🐚 🏷️
+ ## 4. Overriding Default Commands (`/bin/bash`) 🐚 🏷️
  *Control what program starts when the container runs.*
 
  - **When `/bin/bash` is Optional (e.g., Ubuntu):**
    The Ubuntu image is configured to start a shell by default.
 
-  ```bash
   ```bash
    docker run -it ubuntu
    # OR
